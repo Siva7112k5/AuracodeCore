@@ -39,6 +39,7 @@ nav {
   font-size: 20px;
   font-weight: 600;
   color: #111;
+  font-family: 'DM Sans', sans-serif;
   letter-spacing: -0.3px;
 }
 
@@ -945,6 +946,7 @@ nav {
 }
 
 @media (max-width: 640px) {
+  .logo-text { font-size: 15px; }
   .hero h1 { font-size: 38px; letter-spacing: -1px; }
   .hero { padding: 70px 20px 60px; min-height: auto; }
   .hero p { font-size: 15px; }
