@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AURA CODE CORE (AC²) | Smart Solutions. Stronger Future.</title>
+<link rel="icon" type="image/png" href="logo.png">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ==================== NAVBAR ==================== -->
+<div class="nav-wrapper">
+  <nav>
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <div class="logo-icon">
+        <img src="logo.png" alt="AURA CODE CORE" style="width:100%;height:100%;object-fit:contain;" />
+      </div>
+      <span class="logo-text">AURA CODE CORE</span>
+    </a>
+
+    <!-- Desktop Links -->
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li class="dropdown-wrap">
+        <a href="#" class="services-link" id="servicesToggle" onclick="toggleDropdown(event)">
+          Services
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+        </a>
+        <div class="dropdown" id="servicesDropdown">
+          <a href="#services" class="dropdown-item"><div class="d-icon">⚙️</div><div class="d-text">Code Core<small>Software, APIs, Backend</small></div></a>
+          <a href="#services" class="dropdown-item"><div class="d-icon">🚀</div><div class="d-text">Smart Solutions<small>AI, Automation, Analytics</small></div></a>
+          <a href="#services" class="dropdown-item"><div class="d-icon">🔒</div><div class="d-text">Stronger Future<small>Cloud, Security, DevOps</small></div></a>
+          <a href="#services" class="dropdown-item"><div class="d-icon">🎨</div><div class="d-text">UI/UX Design<small>Figma, Prototyping</small></div></a>
+          <a href="#services" class="dropdown-item"><div class="d-icon">📊</div><div class="d-text">Data Analytics<small>ML, Dashboards, Insights</small></div></a>
+          <a href="#services" class="dropdown-item"><div class="d-icon">💼</div><div class="d-text">IT Consulting<small>Strategy & Digital Transform</small></div></a>
+        </div>
+      </li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+    <!-- Right side -->
+    <div class="nav-right">
+      <a href="#contact" class="book-btn">
+        Book a call
+        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+      </a>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#"><div class="m-icon">🏠</div> Home</a>
+    <a href="#about"><div class="m-icon">👤</div> About Us</a>
+    <a href="#pricing"><div class="m-icon">💵</div> Pricing</a>
+    <a href="#work"><div class="m-icon">💼</div> Work</a>
+    <a href="#contact"><div class="m-icon">📞</div> Contact Us</a>
+
+    <div class="mobile-divider"></div>
+    <div class="m-section-label">Services</div>
+
+    <a href="#services"><div class="m-icon">⚙️</div> Code Core</a>
+    <a href="#services"><div class="m-icon">🚀</div> Smart Solutions</a>
+    <a href="#services"><div class="m-icon">🔒</div> Stronger Future</a>
+    <a href="#services"><div class="m-icon">🎨</div> UI/UX Design</a>
+    <a href="#services"><div class="m-icon">📊</div> Data Analytics</a>
+    <a href="#services"><div class="m-icon">💡</div> IT Consulting</a>
+
+    <div class="mobile-divider"></div>
+
+    <a href="#contact" class="mobile-book-btn">📞 &nbsp; Book a Call</a>
+  </div>
+</div>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero">
+  <h1>
+    Smart Solutions.
+    <span class="blue">Stronger Future.</span>
+  </h1>
+  <p>AURA CODE CORE (AC²) – Your trusted technology partner. Experts in full‑stack development, AI/ML, UI/UX design, and digital transformation. Free consultation available!</p>
+  <a href="#contact" class="get-started-btn">Get Started</a>
+
+  <!-- TECH TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <!-- SET 1 -->
+      <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span>React</span></div>
+      <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"><span>Node.js</span></div>
+      <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+      <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"><span>Figma</span></div>
+<!--       <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS"><span>AWS</span></div>
+      <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"><span>Docker</span></div> -->
+      <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"><span>MongoDB</span></div>
+      <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"><span>TypeScript</span></div>
+      <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js"><span>Next.js</span></div>
+      <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js"><span>Vue.js</span></div>
+      <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase"><span>Firebase</span></div>
+     <!--  <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" alt="Laravel"><span>Laravel</span></div> -->
+
+      <!-- SET 2 (duplicate for seamless loop) -->
+      <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span>React</span></div>
+      <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"><span>Node.js</span></div>
+      <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+      <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"><span>Figma</span></div>
+<!--       <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS"><span>AWS</span></div>
+      <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"><span>Docker</span></div> -->
+      <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"><span>MongoDB</span></div>
+      <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"><span>TypeScript</span></div>
+      <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js"><span>Next.js</span></div>
+      <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js"><span>Vue.js</span></div>
+      <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase"><span>Firebase</span></div>
+<!--       <div class="tech-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" alt="Laravel"><span>Laravel</span></div> -->
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SERVICES (What We Do) ==================== -->
+<section class="services-section" id="services">
+  <div class="services-header">
+    <h2>What we do?</h2>
+    <p>Innovative Solutions for Digital Excellence</p>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="scroll-dot"></div>
+  </div>
+
+  <div class="services-grid">
+    <!-- Code Core -->
+    <div class="svc-card">
+      <h3>Code Core</h3>
+      <p>Custom software development, API integrations, and backend architecture designed for scale and performance.</p>
+      <a href="#contact" class="explore-link">Explore more →</a>
+    </div>
+
+    <!-- Smart Solutions (with image) -->
+    <div class="svc-card with-img">
+      <div class="card-text">
+        <h3>Smart Solutions</h3>
+        <p>AI‑powered analytics, automation tools, and digital transformation consulting to give you a competitive edge.</p>
+        <a href="#contact" class="explore-link">Explore more →</a>
+      </div>
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=80" alt="Smart Solutions">
+      </div>
+    </div>
+
+    <!-- Stronger Future -->
+    <div class="svc-card">
+      <h3>Stronger Future</h3>
+      <p>Cloud migration, cybersecurity, and 24/7 monitoring to ensure your business is resilient and future‑ready.</p>
+      <a href="#contact" class="explore-link">Explore more →</a>
+    </div>
+
+    <!-- UI/UX Design (image on left) -->
+    <div class="svc-card with-img img-left">
+      <div class="card-img" style="border-radius:20px 0 0 20px;">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80" alt="UI/UX Design">
+      </div>
+      <div class="card-text">
+        <h3>UI/UX Design</h3>
+        <p>Beautiful, intuitive interfaces that users love. From wireframes to pixel‑perfect prototypes.</p>
+        <a href="#contact" class="explore-link">Explore more →</a>
+      </div>
+    </div>
+
+    <!-- Data Analytics -->
+    <div class="svc-card">
+      <h3>Data Analytics</h3>
+      <p>Turn raw data into actionable insights with custom dashboards, ML pipelines, and business intelligence.</p>
+      <a href="#contact" class="explore-link">Explore more →</a>
+    </div>
+
+    <!-- IT Consulting -->
+    <div class="svc-card">
+      <h3>IT Consulting</h3>
+      <p>Expert IT consulting guiding enterprises toward growth, efficiency, and innovation.</p>
+      <a href="#contact" class="explore-link">Explore more →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== OUR PRODUCTS (changed to OUR WORK) ==================== -->
+<section class="products-section" id="work">
+  <div class="section-header">
+    <h2>Our Work</h2>
+    <p>Exploring excellence in every creation</p>
+  </div>
+  <div class="products-grid">
+    <div class="prod-card">
+      <img class="prod-img" src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=700&q=80" alt="FinEdge Dashboard">
+      <div class="prod-body">
+        <h3>FinEdge Dashboard</h3>
+        <p>Real‑time financial analytics dashboard for a fintech startup.</p>
+        <a href="#" class="get-link">View Project →</a>
+      </div>
+    </div>
+    <div class="prod-card">
+      <img class="prod-img" src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=700&q=80" alt="Retailytics AI">
+      <div class="prod-body">
+        <h3>Retailytics AI</h3>
+        <p>Sales prediction engine that increased accuracy by 35%.</p>
+        <a href="#" class="get-link">View Project →</a>
+      </div>
+    </div>
+    <div class="prod-card">
+      <img class="prod-img" src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=700&q=80" alt="HealthPlus App">
+      <div class="prod-body">
+        <h3>HealthPlus App</h3>
+        <p>Mobile app redesign that reduced bounce rate by 40%.</p>
+        <a href="#" class="get-link">View Project →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PRICING ==================== -->
+<section class="pricing-section" id="pricing">
+  <div class="section-header">
+    <h2>Simple Pricing</h2>
+    <p>Transparent plans for every business size</p>
+  </div>
+  <div class="pricing-grid">
+    <!-- Starter -->
+    <div class="price-card">
+      <div class="plan-name">Starter</div>
+      <div class="price-amount">₹499<span>/mo</span></div>
+      <div class="plan-desc">Perfect for small projects and startups.</div>
+      <div class="price-divider"></div>
+      <ul class="price-features">
+        <li><span class="check">✓</span> Core code audit</li>
+        <li><span class="check">✓</span> Basic analytics dashboard</li>
+        <li><span class="check">✓</span> Email support</li>
+        <li><span class="check">✓</span> 1 project</li>
+        <li><span class="check">✓</span> Mobile‑friendly design</li>
+      </ul>
+      <a href="#contact" class="price-cta">Get Started</a>
+    </div>
+
+    <!-- Growth (Popular) -->
+    <div class="price-card popular">
+      <div class="popular-badge">Most Popular</div>
+      <div class="plan-name">Growth</div>
+      <div class="price-amount">₹999<span>/mo</span></div>
+      <div class="plan-desc">Ideal for growing businesses needing full digital presence.</div>
+      <div class="price-divider"></div>
+      <ul class="price-features">
+        <li><span class="check">✓</span> Full‑stack development</li>
+        <li><span class="check">✓</span> Advanced AI/ML tools</li>
+        <li><span class="check">✓</span> Priority support</li>
+        <li><span class="check">✓</span> 5 projects</li>
+        <li><span class="check">✓</span> Custom UI/UX design</li>
+      </ul>
+      <a href="#contact" class="price-cta">Get Started</a>
+    </div>
+
+    <!-- Enterprise -->
+    <div class="price-card">
+      <div class="plan-name">Enterprise</div>
+      <div class="price-amount">₹1,999<span>/mo</span></div>
+      <div class="plan-desc">Full‑scale solutions for large enterprises and complex projects.</div>
+      <div class="price-divider"></div>
+      <ul class="price-features">
+        <li><span class="check">✓</span> Dedicated engineering team</li>
+        <li><span class="check">✓</span> Custom AI solutions</li>
+        <li><span class="check">✓</span> 24/7 premium support</li>
+        <li><span class="check">✓</span> Unlimited projects</li>
+        <li><span class="check">✓</span> 12 months priority support</li>
+      </ul>
+      <a href="#contact" class="price-cta">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CLIENT TESTIMONIALS ==================== -->
+<section class="testimonials-section">
+  <div class="section-header">
+    <h2>Client Testimonial</h2>
+    <p>They trusted us</p>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testi-card">
+      <p class="testi-text">"AC² transformed our outdated platform into a sleek, high‑performance app. Their full‑stack expertise is unmatched. From the first consultation to the final launch, the team showed exceptional professionalism."</p>
+      <div class="testi-author">
+        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Priya Sharma">
+        <div class="author-info">
+          <strong>Priya Sharma</strong>
+          <span>CTO, FinEdge Solutions</span>
+          <div class="company-logo">● FinEdge</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card">
+      <p class="testi-text">"The machine learning model David built increased our sales predictions accuracy by 35%. Truly a game changer! Their team understands requirements clearly and delivers innovative solutions."</p>
+      <div class="testi-author">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Rohan Mehta">
+        <div class="author-info">
+          <strong>Rohan Mehta</strong>
+          <span>Head of Data, Retailytics</span>
+          <div class="company-logo">● Retailytics</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card">
+      <p class="testi-text">"Philip's UI/UX redesign made our user engagement skyrocket. We saw a 40% drop in bounce rate within a week. I highly recommend AURA CODE CORE as a reliable and forward‑thinking technology partner."</p>
+      <div class="testi-author">
+        <img src="https://randomuser.me/api/portraits/women/67.jpg" alt="Ananya Gupta">
+        <div class="author-info">
+          <strong>Ananya Gupta</strong>
+          <span>Product Manager, HealthPlus</span>
+          <div class="company-logo">● HealthPlus</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CTA ==================== -->
+<section class="cta-section">
+  <h2>Interested to discover how your business can achieve strategic outcomes with AURA CODE CORE?</h2>
+  <a href="#contact" class="cta-btn">Get Started</a>
+</section>
+
+<!-- ==================== ABOUT US ==================== -->
+<section class="about-section" id="about">
+  <div class="about-grid">
+    <div class="about-image">
+      <img src="heroimg.png" alt="AURA CODE CORE Team" style="width:100%;border-radius:24px;" />
+    </div>
+    <div class="about-content">
+      <h2>Who We Are</h2>
+      <p>AURA CODE CORE (AC²) is a team of passionate technologists delivering smart solutions that build a stronger future. We empower businesses with cutting‑edge software, robust infrastructure, and innovative strategies that drive growth and efficiency.</p>
+      <p>Founded in 2024, our team combines expertise in full‑stack development, AI/ML, and UI/UX design to deliver products that make a real difference. Meet our core team:</p>
+      <ul class="team-list">
+        <li><strong>Siva</strong> – Full Stack Developer (React, Node.js, Cloud)</li>
+        <li><strong>Philip</strong> – Node.js & UI/UX Developer</li>
+        <li><strong>David</strong> – Machine Learning, AI & Data Analytics</li>
+      </ul>
+      <a href="#contact" class="cta-btn" style="display:inline-block;margin-top:16px;">Let's Work Together</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section class="contact-section" id="contact">
+  <div class="section-header">
+    <h2>Get In Touch</h2>
+    <p>Let's discuss your project</p>
+  </div>
+  <div class="contact-grid">
+    <form class="contact-form" id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="cta-btn">Send Message</button>
+    </form>
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="contact-icon">✉️</div>
+        <div>
+          <strong>Email</strong>
+          <p>hello@auracodecore.com</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div>
+          <strong>Phone</strong>
+          <p>+91 90578 94789</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div>
+          <strong>Address</strong>
+          <p>123 Design Street, Creative District, India</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="footer-left">
+    <div class="footer-logo">
+      <div class="logo-icon" style="width:38px;height:38px;">
+        <img src="logo.png" alt="AURA CODE CORE" style="width:100%;height:100%;object-fit:contain;" />
+      </div>
+    </div>
+    <p>Smart Solutions. Stronger Future. Want to know how AURA CODE CORE can take your business to the next level with strategic solutions?</p>
+    <div class="footer-contact-label">Contact Us</div>
+    <a href="tel:+919057894789">+91 90578 94789</a>
+    <a href="mailto:hello@auracodecore.com">hello@auracodecore.com</a>
+    <br>
+    <div class="footer-contact-label" style="margin-top:16px;">Location</div>
+    <a href="#">India</a>
+  </div>
+
+  <div class="footer-col">
+    <a href="#services">Code Core</a>
+    <a href="#services">Smart Solutions</a>
+    <a href="#services">Stronger Future</a>
+    <a href="#services">UI/UX Design</a>
+    <a href="#services">Data Analytics</a>
+    <a href="#services">IT Consulting</a>
+  </div>
+
+  <div class="footer-col">
+    <a href="#about">About us</a>
+    <a href="#work">Our Work</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact us</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms & Conditions</a>
+  </div>
+
+  <a href="#" class="footer-scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑</a>
+</footer>
+
+<div class="footer-bottom">
+  © 2026 AURA CODE CORE (AC²). All rights reserved.
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
