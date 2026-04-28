@@ -953,7 +953,11 @@ nav {
 }
 
 @media (max-width: 640px) {
-  .logo-text { font-size: 14px; font-weight:800; }
+  .logo-icon {
+  width: 32px; /* Matches the visual height of this lighter font */
+  height: 32px;
+}
+  .logo-text { font-size: 18px; font-weight:800; }
   .hamburger { display: flex;
 stroke-width: 0;
     height: 25;
