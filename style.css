@@ -954,15 +954,15 @@ nav {
 
 @media (max-width: 640px) {
   .logo-icon {
-  width: 42px; /* Matches the visual height of this lighter font */
-  height: 42px;
+  width: 32px; /* Matches the visual height of this lighter font */
+  height: 32px;
 }
-  .logo-text { font-size: 18px; font-weight:800; }
+  .logo-text { font-size: 15px; font-weight:800; }
   .hamburger { display: flex;
 stroke-width: 0;
-    height: 25;
-    width: 28; }
-  .book-btn { padding: 5px 10px; font-size: 11px; border-radius: 9px; }
+    height: 15;
+    width: 18; }
+  .book-btn { padding: 4px 8px; font-size: 8px; border-radius: 9px; }
   .hero h1 { font-size: 38px; letter-spacing: -1px; }
   .hero { padding: 70px 20px 60px; min-height: auto; }
   .hero p { font-size: 15px; }
