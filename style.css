@@ -946,7 +946,7 @@ nav {
 }
 
 @media (max-width: 640px) {
-  .logo-text { font-size: 15px; }
+  .logo-text { font-size: 10px; }
   .hero h1 { font-size: 38px; letter-spacing: -1px; }
   .hero { padding: 70px 20px 60px; min-height: auto; }
   .hero p { font-size: 15px; }
