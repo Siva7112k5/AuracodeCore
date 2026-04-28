@@ -26,9 +26,44 @@ document.addEventListener('click', function(e) {
   }
 });
 
-// Contact form submission
+// Enhanced Contact Form Submission
 document.getElementById('contactForm')?.addEventListener('submit', function(e) {
   e.preventDefault();
-  alert('✅ Message sent successfully! We\'ll get back to you soon.');
-  this.reset();
+
+  // Get form values
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const service = document.getElementById('service').value;
+  const message = document.getElementById('message').value;
+
+  // Simple validation
+  if (!name || !email || !message) {
+    alert('⚠️ Please fill in all required fields (Name, Email, and Message).');
+    return;
+  }
+
+  // Show success message
+  const form = this;
+  const originalHTML = form.innerHTML;
+  
+  form.innerHTML = `
+    <div style="text-align:center; padding: 40px 20px;">
+      <div style="font-size: 48px; margin-bottom: 16px;">✅</div>
+      <h3 style="color:#111; margin-bottom:8px;">Message Sent Successfully!</h3>
+      <p style="color:#666; font-size:14px;">Thank you, ${name}! We'll get back to you within 24 hours.</p>
+    </div>
+  `;
+
+  // Reset form after 3 seconds
+  setTimeout(() => {
+    form.innerHTML = originalHTML;
+    form.reset();
+    
+    // Re-attach event listeners if needed
+    // (In this case, the form submit listener remains attached)
+  }, 3000);
+
+  // Log to console (replace with actual API call later)
+  console.log('Form submitted:', { name, email, phone, service, message });
 });
