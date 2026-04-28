@@ -962,7 +962,7 @@ nav {
 stroke-width: 0;
     height: 10 ;
     width: 13; }
-  .book-btn { padding: 4px 8px; font-size: 8px; border-radius: 9px; }
+  .book-btn { padding: 4px 8px; font-size: 10px; border-radius: 9px; }
   .hero h1 { font-size: 38px; letter-spacing: -1px; }
   .hero { padding: 70px 20px 60px; min-height: auto; }
   .hero p { font-size: 15px; }
