@@ -946,7 +946,7 @@ nav {
 }
 
 @media (max-width: 640px) {
-  .logo-text { font-size: 15px; font-weight: 900; font-style: italic;}
+  .logo-text { font-size: 14px; font-weight:800; font-style: italic;}
   .hamburger { display: flex;
 stroke-width: 0;
     height: 25;
