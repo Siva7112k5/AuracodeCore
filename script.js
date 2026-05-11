@@ -3,7 +3,7 @@ window.addEventListener('load', function () {
   setTimeout(function () {
     const splash = document.getElementById('splash-screen');
     if (splash) splash.classList.add('hide');
-  }, 2000); // 2 seconds
+  }, 1500); // 1.5 seconds
 });
 
 // Hamburger toggle
