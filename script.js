@@ -1,3 +1,11 @@
+// ===== LINKEDIN-STYLE SPLASH SCREEN =====
+window.addEventListener('load', function () {
+  setTimeout(function () {
+    const splash = document.getElementById('splash-screen');
+    if (splash) splash.classList.add('hide');
+  }, 2000); // 2 seconds
+});
+
 // Hamburger toggle
 function toggleMenu() {
   document.getElementById('mobileMenu').classList.toggle('open');
